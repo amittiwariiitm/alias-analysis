@@ -1,0 +1,55 @@
+class B extends A
+{
+    A bf0;
+
+    public A foo(A)
+    {
+        A a1, retVal, temp1, temp2, temp$0, temp$1, temp$2;
+        B this;
+
+        this := @this: B;
+
+        a1 := @parameter0: A;
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        retVal = temp$0;
+
+        temp$1 = virtualinvoke retVal.<A: A foo(A)>(a1);
+
+        temp1 = temp$1;
+
+        temp$2 = virtualinvoke a1.<A: A foo(A)>(a1);
+
+        temp2 = temp$2;
+
+        this.<B: A bf0> = a1;
+
+        return retVal;
+    }
+
+    public A bar()
+    {
+        A temp$0;
+        B this;
+
+        this := @this: B;
+
+        temp$0 = this.<B: A bf0>;
+
+        return temp$0;
+    }
+
+    void <init>()
+    {
+        B this;
+
+        this := @this: B;
+
+        specialinvoke this.<A: void <init>()>();
+
+        return;
+    }
+}

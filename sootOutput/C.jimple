@@ -1,0 +1,111 @@
+class C extends B
+{
+
+    void bar(F)
+    {
+        java.io.PrintStream temp$1;
+        C this;
+        F x, temp$0;
+
+        this := @this: C;
+
+        x := @parameter0: F;
+
+        temp$0 = new F;
+
+        specialinvoke temp$0.<F: void <init>()>();
+
+        this.<C: F f1> = temp$0;
+
+        temp$1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke temp$1.<java.io.PrintStream: void println(java.lang.String)>("hello world");
+
+        return;
+    }
+
+    F foobar(F)
+    {
+        C this;
+        F x, z, temp$0;
+
+        this := @this: C;
+
+        x := @parameter0: F;
+
+        temp$0 = new F;
+
+        specialinvoke temp$0.<F: void <init>()>();
+
+        z = temp$0;
+
+        return z;
+    }
+
+    int barfoo(A, int)
+    {
+        int z;
+        A x;
+        C this;
+
+        this := @this: C;
+
+        x := @parameter0: A;
+
+        z := @parameter1: int;
+
+        x.<A: int f2> = z;
+
+        return z;
+    }
+
+    boolean boolCheck(boolean)
+    {
+        A a, temp$0, b;
+        C this;
+        boolean t;
+
+        this := @this: C;
+
+        t := @parameter0: boolean;
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        a = temp$0;
+
+        b = a;
+
+        return t;
+    }
+
+    A aCall(A)
+    {
+        A x;
+        C this, c, temp$0;
+
+        this := @this: C;
+
+        x := @parameter0: A;
+
+        temp$0 = new C;
+
+        specialinvoke temp$0.<C: void <init>()>();
+
+        c = temp$0;
+
+        return c;
+    }
+
+    void <init>()
+    {
+        C this;
+
+        this := @this: C;
+
+        specialinvoke this.<B: void <init>()>();
+
+        return;
+    }
+}

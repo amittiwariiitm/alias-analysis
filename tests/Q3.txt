@@ -1,0 +1,17 @@
+3
+P3.main
+4
+s1,s2
+as2,s1
+as2,objA2
+temp1,s1
+A.bar
+3
+af0,af1
+retval,af0 
+temp,a
+B.bar
+3
+af0,af1
+retval,af1
+temp,a

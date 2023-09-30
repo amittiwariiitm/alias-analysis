@@ -1,0 +1,31 @@
+class D extends java.lang.Object
+{
+    int s;
+
+    public int f1()
+    {
+        int temp$0, temp$1;
+        D this;
+
+        this := @this: D;
+
+        temp$0 = 5;
+
+        this.<D: int s> = temp$0;
+
+        temp$1 = this.<D: int s>;
+
+        return temp$1;
+    }
+
+    void <init>()
+    {
+        D this;
+
+        this := @this: D;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,49 @@
+class P1 extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        A objA, objA2, objA3, objA4, temp$0, temp$2, temp$3, temp$4;
+        B objB, temp$1;
+        java.lang.String[] args;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        objA = temp$0;
+
+        temp$1 = new B;
+
+        specialinvoke temp$1.<B: void <init>()>();
+
+        objB = temp$1;
+
+        temp$2 = virtualinvoke objB.<B: A foo(A)>(objA);
+
+        objA2 = temp$2;
+
+        temp$3 = virtualinvoke objA2.<A: A foo(A)>(objB);
+
+        objA3 = temp$3;
+
+        temp$4 = virtualinvoke objA2.<A: A bar()>();
+
+        objA4 = temp$4;
+
+        return;
+    }
+
+    void <init>()
+    {
+        P1 this;
+
+        this := @this: P1;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

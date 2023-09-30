@@ -1,0 +1,180 @@
+class P4 extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        int[] array, temp$5;
+        boolean cond, tr, temp$4, temp$19;
+        A someObj, objA, loop1, loop2, loop3, loop4, temp$6, temp$11, temp$12, temp$13, temp$14;
+        B objB, temp$7;
+        F objF, b1, b2, b3, temp$0, temp$8, temp$9, temp$10, temp$15, temp$16, temp$17, temp$18, temp$20, temp$21, temp$22, temp$23;
+        java.lang.String[] args;
+        int n, ten, nine, temp$1, temp$2, temp$3;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new F;
+
+        specialinvoke temp$0.<F: void <init>()>();
+
+        objF = temp$0;
+
+        temp$1 = 10;
+
+        ten = temp$1;
+
+        temp$2 = virtualinvoke objF.<F: int num(int)>(ten);
+
+        n = temp$2;
+
+        temp$3 = 9;
+
+        nine = temp$3;
+
+        if n < nine goto label2;
+
+        goto label1;
+
+     label1:
+        temp$4 = 0;
+
+        goto label3;
+
+     label2:
+        temp$4 = 1;
+
+     label3:
+        cond = temp$4;
+
+        temp$5 = newarray (int)[nine];
+
+        array = temp$5;
+
+        if cond == 0 goto label5;
+
+        goto label4;
+
+     label4:
+        temp$6 = new A;
+
+        specialinvoke temp$6.<A: void <init>()>();
+
+        objA = temp$6;
+
+        someObj = objA;
+
+        goto label6;
+
+     label5:
+        temp$7 = new B;
+
+        specialinvoke temp$7.<B: void <init>()>();
+
+        objB = temp$7;
+
+        someObj = objB;
+
+     label6:
+        temp$8 = virtualinvoke someObj.<A: F bar(F,int)>(objF, ten);
+
+        b1 = temp$8;
+
+        temp$9 = virtualinvoke someObj.<A: F bar(F,int)>(b1, nine);
+
+        b2 = temp$9;
+
+        temp$10 = virtualinvoke someObj.<A: F foo(F)>(b1);
+
+        b3 = temp$10;
+
+        temp$11 = new A;
+
+        specialinvoke temp$11.<A: void <init>()>();
+
+        loop1 = temp$11;
+
+        temp$12 = new A;
+
+        specialinvoke temp$12.<A: void <init>()>();
+
+        loop2 = temp$12;
+
+        temp$13 = new A;
+
+        specialinvoke temp$13.<A: void <init>()>();
+
+        loop3 = temp$13;
+
+        temp$14 = new A;
+
+        specialinvoke temp$14.<A: void <init>()>();
+
+        loop4 = temp$14;
+
+        temp$15 = new F;
+
+        specialinvoke temp$15.<F: void <init>()>();
+
+        loop1.<A: F f0> = temp$15;
+
+        temp$16 = new F;
+
+        specialinvoke temp$16.<F: void <init>()>();
+
+        loop2.<A: F f0> = temp$16;
+
+        temp$17 = new F;
+
+        specialinvoke temp$17.<F: void <init>()>();
+
+        loop3.<A: F f0> = temp$17;
+
+        temp$18 = new F;
+
+        specialinvoke temp$18.<F: void <init>()>();
+
+        loop4.<A: F f0> = temp$18;
+
+        temp$19 = 1;
+
+        tr = temp$19;
+
+     label7:
+        if tr == 0 goto label9;
+
+        goto label8;
+
+     label8:
+        temp$20 = loop3.<A: F f0>;
+
+        loop4.<A: F f0> = temp$20;
+
+        temp$21 = loop2.<A: F f0>;
+
+        loop3.<A: F f0> = temp$21;
+
+        temp$22 = loop1.<A: F f0>;
+
+        loop2.<A: F f0> = temp$22;
+
+        temp$23 = loop4.<A: F f0>;
+
+        loop1.<A: F f0> = temp$23;
+
+        goto label7;
+
+     label9:
+        return;
+    }
+
+    void <init>()
+    {
+        P4 this;
+
+        this := @this: P4;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,6 @@
+1
+P7.main
+3
+o1,o2
+tp,kk
+kk,ll

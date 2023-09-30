@@ -1,0 +1,28 @@
+class G extends F
+{
+
+    public A foo(A)
+    {
+        A a1;
+        G this;
+
+        this := @this: G;
+
+        a1 := @parameter0: A;
+
+        this.<G: A ff1> = a1;
+
+        return a1;
+    }
+
+    void <init>()
+    {
+        G this;
+
+        this := @this: G;
+
+        specialinvoke this.<F: void <init>()>();
+
+        return;
+    }
+}

@@ -1,0 +1,13 @@
+2
+P4.main
+7
+b1,b2
+b2,b3
+b3,b1
+someObj,objA
+someObj,objB
+someObj,b1
+someObj,b2
+B.bar
+1
+a1, newF

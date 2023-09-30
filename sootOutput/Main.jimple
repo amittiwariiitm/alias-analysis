@@ -1,0 +1,261 @@
+class Main extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        int[] arr, temp$14;
+        boolean p, q, temp$18, temp$19, temp$28, temp$36;
+        A a1, temp$0, a2, temp$1, a3, temp$2, r1, temp$3, r2, temp$4, r3, temp$5, temp$23, temp$24, temp$31, temp$32;
+        B b1, temp$6, b2, temp$7, b3, temp$8;
+        C c1, temp$9, c2, temp$10, c3, temp$11;
+        F g1, temp$12, g2, temp$13, temp$22, temp$25, temp$26, temp$29, temp$30, temp$33, temp$34;
+        java.lang.String[] args;
+        int x, z, j, k, temp$15, temp$16, temp$17, temp$20, temp$21, temp$27, temp$35, temp$37, temp$38, temp$39, temp$40;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new A;
+
+        specialinvoke temp$0.<A: void <init>()>();
+
+        a1 = temp$0;
+
+        temp$1 = new A;
+
+        specialinvoke temp$1.<A: void <init>()>();
+
+        a2 = temp$1;
+
+        temp$2 = new A;
+
+        specialinvoke temp$2.<A: void <init>()>();
+
+        a3 = temp$2;
+
+        temp$3 = new A;
+
+        specialinvoke temp$3.<A: void <init>()>();
+
+        r1 = temp$3;
+
+        temp$4 = new A;
+
+        specialinvoke temp$4.<A: void <init>()>();
+
+        r2 = temp$4;
+
+        temp$5 = new A;
+
+        specialinvoke temp$5.<A: void <init>()>();
+
+        r3 = temp$5;
+
+        temp$6 = new B;
+
+        specialinvoke temp$6.<B: void <init>()>();
+
+        b1 = temp$6;
+
+        temp$7 = new B;
+
+        specialinvoke temp$7.<B: void <init>()>();
+
+        b2 = temp$7;
+
+        temp$8 = new B;
+
+        specialinvoke temp$8.<B: void <init>()>();
+
+        b3 = temp$8;
+
+        temp$9 = new C;
+
+        specialinvoke temp$9.<C: void <init>()>();
+
+        c1 = temp$9;
+
+        temp$10 = new C;
+
+        specialinvoke temp$10.<C: void <init>()>();
+
+        c2 = temp$10;
+
+        temp$11 = new C;
+
+        specialinvoke temp$11.<C: void <init>()>();
+
+        c3 = temp$11;
+
+        temp$12 = new F;
+
+        specialinvoke temp$12.<F: void <init>()>();
+
+        g1 = temp$12;
+
+        temp$13 = new F;
+
+        specialinvoke temp$13.<F: void <init>()>();
+
+        g2 = temp$13;
+
+        arr = newarray (int)[20];
+
+        temp$14 = arr;
+
+        temp$15 = 0;
+
+        temp$16 = temp$14[temp$15];
+
+        x = temp$16;
+
+        a1.<A: int f2> = x;
+
+        temp$17 = a1.<A: int f2>;
+
+        a2.<A: int f2> = temp$17;
+
+        temp$18 = 1;
+
+        p = temp$18;
+
+        temp$19 = 0;
+
+        q = temp$19;
+
+        temp$20 = 0;
+
+        j = temp$20;
+
+     label1:
+        if j < 20 goto label2;
+
+        goto label9;
+
+     label2:
+        temp$21 = 0;
+
+        k = temp$21;
+
+     label3:
+        if k < 30 goto label4;
+
+        goto label8;
+
+     label4:
+        if p == 0 goto label6;
+
+        goto label5;
+
+     label5:
+        g1 = g2;
+
+        r1.<A: F f1> = g1;
+
+        temp$22 = r2.<A: F f1>;
+
+        g2 = temp$22;
+
+        temp$23 = virtualinvoke c1.<C: A bCall(A)>(c2);
+
+        r1 = temp$23;
+
+        temp$24 = virtualinvoke c2.<C: A aCall(A)>(r1);
+
+        r2 = temp$24;
+
+        virtualinvoke c3.<C: void recursive(int)>(j);
+
+        temp$25 = virtualinvoke a1.<A: F foobar(F)>(g1);
+
+        g2 = temp$25;
+
+        virtualinvoke b1.<B: void bar(F)>(g2);
+
+        temp$26 = virtualinvoke g2.<F: F foo()>();
+
+        g1 = temp$26;
+
+        temp$27 = virtualinvoke a2.<A: int barfoo(A,int)>(r1, x);
+
+        z = temp$27;
+
+        temp$28 = virtualinvoke c3.<C: boolean boolCheck(boolean)>(p);
+
+        q = temp$28;
+
+        goto label7;
+
+     label6:
+        temp$29 = new F;
+
+        specialinvoke temp$29.<F: void <init>()>();
+
+        g2 = temp$29;
+
+        r1.<A: F f1> = g2;
+
+        temp$30 = r2.<A: F f1>;
+
+        g2 = temp$30;
+
+        temp$31 = virtualinvoke a2.<A: A aCall(A)>(r1);
+
+        r1 = temp$31;
+
+        temp$32 = virtualinvoke b1.<B: A bCall(A)>(r1);
+
+        r2 = temp$32;
+
+        virtualinvoke r2.<A: void recursive(int)>(k);
+
+        temp$33 = virtualinvoke a1.<A: F foobar(F)>(g1);
+
+        g2 = temp$33;
+
+        virtualinvoke b3.<B: void bar(F)>(g2);
+
+        temp$34 = virtualinvoke g2.<F: F foo()>();
+
+        g2 = temp$34;
+
+        temp$35 = virtualinvoke a1.<A: int barfoo(A,int)>(r1, x);
+
+        z = temp$35;
+
+        temp$36 = virtualinvoke c3.<C: boolean boolCheck(boolean)>(p);
+
+        q = temp$36;
+
+     label7:
+        temp$37 = k;
+
+        temp$38 = temp$37 + 1;
+
+        k = temp$38;
+
+        goto label3;
+
+     label8:
+        temp$39 = j;
+
+        temp$40 = temp$39 + 1;
+
+        j = temp$40;
+
+        goto label1;
+
+     label9:
+        return;
+    }
+
+    void <init>()
+    {
+        Main this;
+
+        this := @this: Main;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}

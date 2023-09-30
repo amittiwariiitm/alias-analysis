@@ -1,0 +1,12 @@
+2
+P1.main
+6
+objA2, objA3
+objA3, objA4
+objA2, objA
+objA4, objA2
+objA4, objB
+objA2, objB
+B.foo
+1
+retVal, bf0
